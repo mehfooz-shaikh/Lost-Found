@@ -2,51 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lost & Found Help Center</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost & Found Help Center</title>
+  <link rel="stylesheet" href="stylee.css" />
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="#">Home</a>
-            <a href="#">Report Lost</a>
-            <a href="#">Report Found</a>
-            <a href="#">View Items</a>
-            </nav>
-    </header>
+  <header>
+    <h1>Lost & Found Help Center</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" onclick="showForm('lost')">Report Lost</a>
+      <a href="#" onclick="showForm('found')">Report Found</a>
+      <a href="#">View Items</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="intro">
-            <h2>Welcome!</h2>
-            <p>If you've lost or found an item, you're in the right place. Help us reunite people with their belongings.
-            </p>
-            <button onclick="showForm('lost')">Report Lost Item</button>
-            <button onclick="showForm('found')">Report Found Item</button>
-        </section>
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>If you've lost or found an item, you're in the right place. Help us reunite people with their belongings.</p>
+      <button onclick="showForm('lost')">Report Lost Item</button>
+      <button onclick="showForm('found')">Report Found Item</button>
+    </section>
 
-        <section id="form-section" class="hidden">
-            <h2 id="form-title"></h2>
-            <form id="item-form">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <input type="text" placeholder="Item Name" required />
-                <textarea placeholder="Item Description" required></textarea>
-                <input type="text" placeholder="Location" required />
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+    <section id="form-section" class="hidden">
+      <div class="form-card">
+        <h2 id="form-title"></h2>
+        <form id="item-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Item Name" required />
+          <textarea placeholder="Item Description" required></textarea>
+          <input type="text" placeholder="Location" required />
+          <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation" class="hidden success-msg">✅ Thank you! Your entry has been submitted.</p>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Lost & Found Help Center</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Lost & Found Help Center | Built with ❤️</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="scriptt.js"></script>
 </body>
 
-
 </html>
-
